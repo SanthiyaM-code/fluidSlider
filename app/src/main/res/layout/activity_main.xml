@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.ramotion.fluidslider.FluidSlider
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/slider"
+       android:layout_alignParentBottom="true"
+       app:bar_color="@android:color/holo_blue_bright"
+       app:duration="500"
+       app:end_text="Max"
+       app:initial_position=".3"
+       app:size="normal"
+       app:start_text="Min"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:id="@+id/text"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_blue_bright"/>
+
+</RelativeLayout>
